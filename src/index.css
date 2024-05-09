@@ -6,6 +6,14 @@
   padding: 0;
 }
 
+:root {
+  --white-color: #F6EFEF;
+  --blue-color: #01B8F8;
+  --purple-color: #BC60FB;
+  --yellow-color: #F1FF4B;
+  --turquoise-color: #1DA9A678;
+}
+
 body {
   margin: 0;
   color: #F6EFEF;
@@ -19,9 +27,25 @@ code {
   font-family: "Roboto Slab", serif; /* Вкажіть шрифт для code */
 }
 
-.hh {
-  width: 100%;
-  height: 50px;
+.section {
+  padding: 112px 0px 152px 0px;
+}
+
+h2 {
+  font-size: 34px;
+  margin-bottom: 28px;
+  text-transform: uppercase;
+}
+ 
+h3 {
+  margin-bottom: 47px;
+  font-size: 26px; 
+}
+.description {
+  font-size: 19px;
+  font-weight: 200;
+  text-align: center;
+  margin-bottom: 70px;
 }
 
 .line {
@@ -29,7 +53,9 @@ code {
   border-width: 2.1px;
   border-style: solid;
   backdrop-filter: blur(2.5px);
+  
 }
+
 
 .blue {
   border-color: #01B8F8;

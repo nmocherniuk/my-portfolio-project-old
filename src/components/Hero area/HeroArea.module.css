@@ -33,7 +33,8 @@ h1 {
 .container div:nth-of-type(2) > span {
     color: #0079FF; 
     border-right: .15em solid #0079FF; /* Лінія, що імітує курсор друкованої машини */
-    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite; /* Анімація письма тексту та мерехтіння курсора */
+    animation: 25s steps(15), blink-caret .75s step-end infinite; /* Анімація письма тексту та мерехтіння курсора */
+
 }
 .button {
     background: linear-gradient(to right, #01BDF8 30%, #0079FF 80%);

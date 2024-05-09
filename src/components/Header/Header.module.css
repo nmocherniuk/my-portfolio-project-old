@@ -23,5 +23,24 @@ header {
     font-size: 21px;
 }
 
+.nav-item:hover {
+    cursor: pointer;
+}
+
+/* .active-blue {
+    color: var(--blue-color);
+}
+.active-purple {
+    color: var(--purple-color);
+}
+.active-yellow {
+    color: var(--yellow-color);
+}
+.active-turquoise {
+    color: var(--turquoise-color);
+} */
+
+
+  
 
 

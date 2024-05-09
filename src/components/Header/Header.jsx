@@ -1,29 +1,56 @@
-import React from 'react';
+import React, { useEffect, useState, Fragment } from 'react';
 import classes from "./Header.module.css";
 import logo from '../../assets/logo.svg';
-
-import {motion, useScroll, useTransform} from 'framer-motion';
+import { motion, useScroll, useTransform, useInView, useAnimation } from 'framer-motion';
+import { Link } from 'react-scroll';
 
 function Header() {
 
-    const {scrollY} = useScroll();
-    const opacityHeader = useTransform(scrollY, [0, 200, 400], [0.8, 0.9, 1]);
-    const yHeader = useTransform(scrollY, [0, 50, 70, 100], [-100, -50, -10, 0]);
-    
+    const { scrollY } = useScroll();
+
+    const yHeader = useTransform(scrollY, [0, 30, 50, 70, 100, 120, 150, 160], [-100, -90, -70, -50, -40, -20, -10, 0]);
+    console.log(1);
+
     return (
-        <motion.header className={classes.header} style={{y: yHeader, opacity: opacityHeader}}>
-            <div className={classes.container}>
-                <img src={logo} alt="logo" />
-                <nav className={classes.navigation}>
-                    <span>Home</span>
-                    <span>About</span>
-                    <span>Portfolio</span>
-                    <span>Contact</span>
-                </nav>
-            </div>
+        <Fragment>
             <hr className='line blue'/>
-        </motion.header>
+            <motion.header className={classes.header} style={{ y: yHeader }}>
+                <div className={classes.container}>
+                    <img src={logo} alt="logo" />
+                    <nav className={classes.navigation}>
+                        <Link
+                            to="hero"
+                            className={classes["nav-item"]}
+                            spy={true}
+                            smooth={true}
+                            offset={-10}
+                            duration={600}>Home</Link>
+
+                        <Link to="about"
+                            className={classes["nav-item"]}
+                            spy={true}
+                            smooth={true}
+                            offset={-103}
+                            duration={600}>About</Link>
+                        <Link to="portfolio"
+                            className={classes["nav-item"]}
+                            spy={true}
+                            smooth={true}
+                            offset={-103}
+                            duration={600}>Portfolio</Link>
+                        <Link to="contact"
+                            className={classes["nav-item"]}
+                            activeClass={classes["active-turquoise"]}
+                            spy={true}
+                            smooth={true}
+                            offset={-103}
+                            duration={600}>Contact</Link>
+                    </nav>
+                </div>
+            </motion.header>
+        </Fragment>
+
     );
 }
-
 export default Header;
+    
