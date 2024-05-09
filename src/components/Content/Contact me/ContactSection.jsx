@@ -5,8 +5,7 @@ import Light from "../../../UI/Light.jsx";
 const ContactSection = () => {
     return (
         <Fragment>
-            <hr className='line turquoise' />
-            <Light color="turquoise" />
+
             <section className="section" id='contact'>
                 <div className={classes.container}>
                     <h2>Contact with me</h2>

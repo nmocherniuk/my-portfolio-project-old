@@ -4,7 +4,7 @@
 }
 
 .area {
-    background: linear-gradient(to right, #1B1B1B 100%, #1B1A1A 30%);
+    background: linear-gradient(to bottom, #1b1b1b, transparent);
     height: 100vh;
 }
 .container {

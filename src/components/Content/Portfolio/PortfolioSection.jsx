@@ -18,8 +18,6 @@ const DESCRIPTION = {
 const PortfolioSection = () => {
     return (
         <Fragment>
-            <hr className='line yellow' />
-            <Light color="yellow" />
             <section className="section" id='portfolio'>
                 <div className={classes.container}>
                     <h2>Portfolio</h2>

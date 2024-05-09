@@ -7,8 +7,7 @@ import Light from "../../../UI/Light.jsx";
 const AboutMe = () => {
     return (
         <Fragment>
-            <hr className='line purple' />
-            <Light color="purple" />
+        
             <section className="section" id="about">
                 <div className={classes.container}>
                     <h2>About me</h2>
