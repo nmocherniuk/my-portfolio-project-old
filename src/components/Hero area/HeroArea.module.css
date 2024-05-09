@@ -1,0 +1,52 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.area {
+    background: linear-gradient(to right, #1B1B1B 100%, #1B1A1A 30%);
+    height: 100vh;
+}
+.container {
+    margin: 0 auto;
+    width: 1200px;
+    height: 100%;
+    color: #F6EFEF;
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    font-size: 66px;
+}
+.text {
+    font-size: 23px;
+    margin: 20px 0 36px 0;
+}
+
+.greeting {
+    font-size: 50px;
+}
+.container div:nth-of-type(2) {
+    font-size: 44px;
+}
+.container div:nth-of-type(2) > span {
+    color: #0079FF; 
+    border-right: .15em solid #0079FF; /* Лінія, що імітує курсор друкованої машини */
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite; /* Анімація письма тексту та мерехтіння курсора */
+}
+.button {
+    background: linear-gradient(to right, #01BDF8 30%, #0079FF 80%);
+}
+
+  /* Анімація письма тексту */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* Анімація мерехтіння курсора */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #0079FF }
+  }

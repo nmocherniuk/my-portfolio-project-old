@@ -1,0 +1,29 @@
+.footer {
+    background-color: #111111;
+    padding-top: 47px;
+    padding-bottom: 18px;
+}
+.footer h4 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+.footer > p {
+    text-align: center;
+    font-size: 13px;
+    margin: 18px 0px 0px 0px;
+}
+.container {
+    height: 100%;
+    width: 1200px;
+    margin: 0px auto 42px auto;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr; 
+    gap: 65px;
+    
+}
+.container p {
+    font-size: 16px;
+}
+.highlighted {
+    color: #1DA9A5;
+}
