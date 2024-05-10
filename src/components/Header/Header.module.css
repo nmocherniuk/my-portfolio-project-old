@@ -32,21 +32,30 @@ header {
 }
 
 /* Анімація для активного посилання */
+.nav-item {
+    /* Загальні стилі для всіх навігаційних посилань */
+    color: var(--secondary-color); /* Колір за замовчуванням */
+
+    transition: color 0.3s ease; /* Плавні переходи для кольору та товщини шрифту */
+}
+
+/* Анімація для активного посилання */
 .nav-item.active-about {
-    color: #b550f98e; /* Новий колір для активного посилання */
-    font-weight: 500; /* Нова товщина шрифту для активного посилання */
-    transition: color 0.3s ease, font-weight 0.3s ease;
+    color: #e241fbb3; /* Новий колір для активного посилання */
+    font-weight: 600; /* Нова товщина шрифту для активного посилання */
+}
+
+.nav-item.active-portfolio,
+.nav-item.active-contact {
+    font-weight: 600; /* Нова товщина шрифту для активного посилання */
 }
 
 .nav-item.active-portfolio {
-    color: #e0cf35dd;
-    font-weight: 500;
-    transition: color 0.3s ease, font-weight 0.3s ease;
+    color: #e0cf35dd; /* Новий колір для активного посилання */
 }
 
 .nav-item.active-contact {
-    color: #6dc9c98e;
-    font-weight: 500;
-    transition: color 0.3s ease, font-weight 0.3s ease;
+    color: #6dc9c98e; /* Новий колір для активного посилання */
 }
+
 
