@@ -41,6 +41,11 @@ h3 {
   margin-bottom: 47px;
   font-size: 26px; 
 }
+
+h4 {
+  font-size: 18px;
+}
+
 .description {
   font-size: 19px;
   font-weight: 200;
@@ -62,6 +67,9 @@ h3 {
 }
 .purple {
   border-color: #BC60FB;
+  width: 50px;
+ 
+
 }
 
 .yellow {
@@ -71,4 +79,26 @@ h3 {
 .turquoise {
   border-color: #1DA9A678;
 } 
+
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  /* Збільшіть відступ, щоб уникнути заступання за header */
+  background: #888;
+  border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
 

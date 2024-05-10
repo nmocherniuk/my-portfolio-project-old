@@ -2,6 +2,8 @@ import classes from './Card.module.css';
 
 
 
+
+
 const Card = ({ src, alt, description, mainProject = false }) => {
     return (
         <div className={`${classes.card} ${mainProject ? classes['main-div'] : null}`}>

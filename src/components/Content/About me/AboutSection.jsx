@@ -3,14 +3,17 @@ import Button from "../../../UI/Button.jsx";
 import SkillFrame from "../../../UI/SkillFrame.jsx";
 import classes from './AboutSection.module.css';
 import Light from "../../../UI/Light.jsx";
+import CardInfo from "../Portfolio/CardInfo.jsx";
 
 const AboutMe = () => {
     return (
         <Fragment>
 
             <section className="section" id="about">
+           
                 <div className={classes.container}>
                     <h2>About me</h2>
+                    
                     <p className="description">Here you will find more information about me, what I do, and my current skills mostly <br />
                         in terms of programming and technology.</p>
                     <div className={classes.info}>

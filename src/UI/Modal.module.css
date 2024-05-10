@@ -1,0 +1,30 @@
+.backdrop {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 20;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal {
+    position: fixed;
+    padding: 25px 30px;
+    top: 0;           /* Закріплюємо вікно вгорі */
+    right: 0;         /* Відступ з правого боку - немає, тобто прижимаємо до правого краю */
+    height: 100%;     /* Висота модального вікна - весь екран */
+    background-color: #242323;
+    width: 31%;       /* Ширина модального вікна */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    z-index: 30;
+    animation: slide-left 300ms ease-out forwards;
+    overflow-y: auto; /* Додайте прокрутку по вертикалі */
+}
+
+@keyframes slide-left {
+    from {
+        right: -30%;  /* Початкове положення справа від видимої області */
+    }
+    to {
+        right: 0;     /* Кінцеве положення - правий край модального вікна збігається з правим краєм видимої області */
+    }
+}

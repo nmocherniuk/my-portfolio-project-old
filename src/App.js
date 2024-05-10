@@ -5,7 +5,7 @@ import PortfolioSection from "./components/Content/Portfolio/PortfolioSection.js
 import Footer from "./components/Footer/Footer.jsx";
 import Header from "./components/Header/Header.jsx";
 import HeroArea from "./components/Hero area/HeroArea.jsx";
-
+import CardInfo from "./components/Content/Portfolio/CardInfo.jsx"
 
 
 
@@ -14,7 +14,9 @@ function App() {
 
   return (
     <Fragment>
+      <CardInfo/>
       <Header/>
+      
       <HeroArea/>
       <AboutMe/>
       <PortfolioSection/>
