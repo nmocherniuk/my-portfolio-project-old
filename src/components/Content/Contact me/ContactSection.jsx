@@ -5,8 +5,7 @@ import Light from "../../../UI/Light.jsx";
 const ContactSection = () => {
     return (
         <Fragment>
-
-            <section className="section" id='contact'>
+            <section className={`section ${classes.section}`} id='contact'>
                 <div className={classes.container}>
                     <h2>Contact with me</h2>
                     <p className="description">Get in touch or shoot me an email directly on nazar.mocherniuk@gmail.com. <br />

@@ -16,6 +16,9 @@ header {
     justify-content: space-between;
     align-items: center;
 }
+.container > a {
+    height: 27px;
+}
 
 .navigation {
     display: flex;
@@ -25,22 +28,25 @@ header {
 
 .nav-item:hover {
     cursor: pointer;
+   
 }
 
-.blue {
-    color: var(--blue-color);
-}
-.purple {
-    color: var(--purple-color);
-}
-.yellow {
-    color: var(--yellow-color);
-}
-.turquoise {
-    color: var(--turquoise-color);
+/* Анімація для активного посилання */
+.nav-item.active-about {
+    color: #b550f98e; /* Новий колір для активного посилання */
+    font-weight: 500; /* Нова товщина шрифту для активного посилання */
+    transition: color 0.3s ease, font-weight 0.3s ease;
 }
 
+.nav-item.active-portfolio {
+    color: #e0cf35dd;
+    font-weight: 500;
+    transition: color 0.3s ease, font-weight 0.3s ease;
+}
 
-  
-
+.nav-item.active-contact {
+    color: #6dc9c98e;
+    font-weight: 500;
+    transition: color 0.3s ease, font-weight 0.3s ease;
+}
 
