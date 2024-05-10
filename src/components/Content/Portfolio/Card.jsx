@@ -1,12 +1,18 @@
 import classes from './Card.module.css';
 
-
-
+import { useDispatch, useSelector } from 'react-redux';
+import { overlayActions } from '../../../store/overlay-slice';
 
 
 const Card = ({ src, alt, description, mainProject = false }) => {
+    const dispatch = useDispatch();
+    const overlay = useSelector(state => state.overlay.overlay)
+    function handleClickCard () {
+        dispatch(overlayActions.overlayShow())
+    }
+
     return (
-        <div className={`${classes.card} ${mainProject ? classes['main-div'] : null}`}>
+        <div className={`${classes.card} ${mainProject ? classes['main-div'] : null}`} onClick={handleClickCard}>
             <img src={src} alt={alt} />
             <div className={mainProject ? classes['main-div'] : null} >
                 <h5>{description.title}</h5>

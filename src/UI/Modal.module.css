@@ -10,15 +10,15 @@
     position: fixed;
     padding: 25px 30px;
     top: 0;           /* Закріплюємо вікно вгорі */
-    right: 0;         /* Відступ з правого боку - немає, тобто прижимаємо до правого краю */
     height: 100%;     /* Висота модального вікна - весь екран */
     background-color: #242323;
-    width: 31%;       /* Ширина модального вікна */
+    width: 520px;     /* Ширина модального вікна */
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
     z-index: 30;
     animation: slide-left 300ms ease-out forwards;
-    overflow-y: auto; /* Додайте прокрутку по вертикалі */
+    overflow-y: auto; /* Додано скролінг по вертикалі */
 }
+
 
 @keyframes slide-left {
     from {

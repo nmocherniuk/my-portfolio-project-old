@@ -4,7 +4,6 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    
 }
 
 .overlay-project > div:nth-of-type(1) {
@@ -21,6 +20,11 @@
     border-color: #918d8d;
 }
 
+.overlay-project img {
+    border-radius: 10px;
+}
+
+
 .overlay-project > div:nth-of-type(2) {
     margin: 30px 0px;
 }
@@ -29,8 +33,25 @@
     margin-bottom: 0px;
 }
 
+
+.overlay-project h4 {
+    font-size: 19px;
+    margin-bottom: 9px;
+}
+
 .overlay-project p {
-    margin: 6px 0px 30px 0px;
+    margin: 2px 0px 25px 0px;
+    font-size: 13px;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.content > div:first-of-type {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .technologies {
