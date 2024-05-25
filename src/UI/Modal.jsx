@@ -1,6 +1,9 @@
 import React, { Fragment } from "react";
 import ReactDOM  from "react-dom";
 import classes from "./Modal.module.css";
+import Button from "./Button";
+import { motion } from "framer-motion";
+
 
 const Backdrop = props => {
     return ( 
@@ -11,20 +14,32 @@ const Backdrop = props => {
 
 const ModalOverlay = props => {
     return (
-        <aside className={classes.modal}>
+        <motion.aside
+            variants={{
+                hidden: { opacity: 0, right: '-100%' },
+                visible: { opacity: 1, right: 0 },
+                exit: { opacity: 0, right: '-100%' }
+            }}
+            initial="hidden"
+            animate="visible"
+            exit="exit"
+            transition={{ duration: 0.6, ease: "easeInOut"}}
+            className={classes.modal}
+        >
             <div className={classes.content}>{props.children}</div>
-        </aside>
-    )
-}
+        </motion.aside>
+    );
+};
 
 const portalElement = document.getElementById('overlay')
 
 const Modal = props => {
-    
+
     return ( 
         <Fragment>
-            {ReactDOM.createPortal(<Backdrop onClick={props.onHideCart}/>, portalElement)}
-            {ReactDOM.createPortal(<ModalOverlay>{props.children}</ModalOverlay>, portalElement)}
+            ( {ReactDOM.createPortal(<Backdrop onClick={props.onHideCart}/>, portalElement)}
+            {ReactDOM.createPortal(<ModalOverlay>{props.children}</ModalOverlay>, portalElement)})
+           
         </Fragment>
     )
 };

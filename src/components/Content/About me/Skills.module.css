@@ -1,0 +1,10 @@
+.skills {
+    grid-column: 2 / 3;
+}
+.skills-list {
+  
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}

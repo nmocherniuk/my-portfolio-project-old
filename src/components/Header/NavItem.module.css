@@ -1,0 +1,26 @@
+.nav-item {
+    transition: color 0.3s ease;
+}
+
+.nav-item:hover {
+    cursor: pointer;
+}
+
+.nav-item.active-about {
+    color: #e241fbb3;
+}
+
+.nav-item.active-portfolio {
+    color: #e0cf35dd;
+}
+
+.nav-item.active-contact {
+    color: #6dc9c98e;
+}
+
+.nav-item.active-about,
+.nav-item.active-portfolio,
+.nav-item.active-contact {
+    font-weight: 600;
+}
+

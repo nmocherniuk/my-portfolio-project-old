@@ -1,18 +1,3 @@
-.section {
-    padding: 112px 0px 152px 0px;
-}
-
-
-.container {
-    height: 100%;
-    width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-
 .info {
     display: grid;
     gap: 49px;
@@ -20,49 +5,4 @@
     height: 100%;
 }
 
-.introduce {
 
-    grid-column: 1 / 2;
-}
-.introduce p {
-    margin-bottom: 47px;
-    display: flex;
-    flex-direction: column;
-    /* Варто це переглянути і змінити */
-               
-}
-
-.introduce p span {
-    line-height: 30px;
-    font-size: 17px;
-    
-}
-
-.styled-text {
-    font-weight: 700;
-}
-
-.skills {
-    grid-column: 2 / 3;
-}
-.skills-list {
-  
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-}
-
-.button {
-    align-self: flex-start;
-    background-color: transparent;
-    background: linear-gradient(#2D2D2D, #2D2D2D) padding-box,
-    linear-gradient(to right, #D822FE 30% , #9B32EF 60%) border-box;
-    border: 4px solid transparent;
-}
-
-.button > span {
-    background: linear-gradient(to right, #D822FE 30% , #9B32EF 60%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}

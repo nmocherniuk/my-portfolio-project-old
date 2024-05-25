@@ -1,53 +1,55 @@
-* {
-    padding: 0;
-    margin: 0;
-}
-
 .area {
     background: linear-gradient(to bottom, #1b1b1b, transparent);
     height: 100vh;
 }
+
 .container {
     margin: 0 auto;
-    width: 1200px;
+    width: 90vw; 
+    max-width: 1200px; 
+    min-width: 300px;
     height: 100%;
-    color: #F6EFEF;
     display: flex;
-    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-h1 {
-    font-size: 66px;
+.image {
+    width: 37%;
+    height: 500px;
 }
+
 .text {
-    font-size: 23px;
-    margin: 20px 0 36px 0;
+    font-size: 22px;
+    line-height: 33px;
+    margin: 20px 0 30px 0;
 }
 
-.greeting {
-    font-size: 50px;
+.intro {
+    font-size: 43px;
 }
-.container div:nth-of-type(2) {
-    font-size: 44px;
-}
-.container div:nth-of-type(2) > span {
+
+.intro span {
     color: #0079FF; 
-    border-right: .15em solid #0079FF; /* Лінія, що імітує курсор друкованої машини */
-    animation: 25s steps(15), blink-caret .75s step-end infinite; /* Анімація письма тексту та мерехтіння курсора */
-
-}
-.button {
-    background: linear-gradient(to right, #01BDF8 30%, #0079FF 80%);
+    border-right: .15em solid #0079FF; 
+    animation: 25s steps(15), blink-caret .75s step-end infinite; 
 }
 
-  /* Анімація письма тексту */
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-  }
-  
-  /* Анімація мерехтіння курсора */
-  @keyframes blink-caret {
+@keyframes blink-caret {
     from, to { border-color: transparent }
     50% { border-color: #0079FF }
-  }
+}
+
+.button {
+    background: linear-gradient(to right, #01BDF8 30%, #0079FF 80%);
+    border: none;
+}
+
+
+
+
+
+
+
+

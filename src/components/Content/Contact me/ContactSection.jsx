@@ -1,17 +1,18 @@
 import { Fragment } from 'react';
 import classes from './ContactSection.module.css';
 import Form from './Form';
-import Light from "../../../UI/Light.jsx";
+import Container from '../../../UI/Container.jsx';
+
 const ContactSection = () => {
     return (
         <Fragment>
-            <section className={`section ${classes.section}`} id='contact'>
-                <div className={classes.container}>
+            <section className={classes['contact-section']} id='contact'>
+                <Container>
                     <h2>Contact with me</h2>
-                    <p className="description">Get in touch or shoot me an email directly on nazar.mocherniuk@gmail.com. <br />
+                    <p className="description">Get in touch or shoot me an email directly on <span className='bold'>nazar.mocherniuk@gmail.com</span>.<br />
                         I will get back to you as soon as possible</p>
                     <Form />
-                </div>
+                </Container>
 
             </section>
         </Fragment>

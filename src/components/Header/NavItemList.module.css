@@ -1,0 +1,16 @@
+.navigation  ul {
+    display: flex;
+    gap: 30px;
+    font-size: 21px;
+}
+
+.navigation li {
+    transition: transform 0.2s ease;
+    width: 100px;
+    text-align: center;
+}
+
+.navigation li:hover {
+    transform: scale(1.1);
+}
+

@@ -1,17 +1,23 @@
 import { configureStore, createSlice } from "@reduxjs/toolkit";
 
-const initialState = {overlay: false}
+const initialState = {projectOverlay: false, navMenuOverlay: false}
 
 const overlaySlice = createSlice({
     name: 'overlay',
     initialState: initialState,
     reducers: {
-        overlayShow(state) {
-            state.overlay = true;
+        projectOverlayShow(state) {
+            state.projectOverlay = true;
         },
-        overlayHide(state) {
-            state.overlay = false;
-        }
+        projectOverlayHide(state) {
+            state.projectOverlay = false;
+        },
+        navMenuOverlayShow(state) {
+            state.navMenuOverlay = true;
+        },
+        navMenuOverlayHide(state) {
+            state.navMenuOverlay = false;
+        },
     }
 })
 
