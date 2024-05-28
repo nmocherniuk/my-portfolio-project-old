@@ -12,7 +12,7 @@ import MediaProjectInfo from "./MediaProjectInfo";
 const CardInfo = ({ title, description, src, alt }) => {
     const dispatch = useDispatch();
     function hideOverlayHandler() {
-        dispatch(overlayActions.projectOverlayHide())
+        dispatch(overlayActions.overlayHide())
     }
 
     return (

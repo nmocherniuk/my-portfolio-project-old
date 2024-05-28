@@ -8,6 +8,7 @@
 }
 
 :root {
+  --dark-backgound-color: #2D2D2D;
   --white-color-text: #F6EFEF;
   --blue-color: #01B8F8;
   --purple-color: #BC60FB;
@@ -35,7 +36,7 @@
 body {
   margin: 0;
   color: var(--white-color-text);
-  background-color: #2D2D2D;
+  background-color: var(--dark-backgound-color);
   font-family: "Poppins", "Roboto Slab", serif; 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

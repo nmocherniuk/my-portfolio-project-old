@@ -9,7 +9,7 @@ const Card = ({ src, alt, description}) => {
     const [isHovered, setIsHovered] = useState(false);
 
     function handleClickCard() {
-        dispatch(overlayActions.projectOverlayShow());
+        dispatch(overlayActions.overlayShow());
     }
 
     return (

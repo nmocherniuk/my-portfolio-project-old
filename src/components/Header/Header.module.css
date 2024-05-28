@@ -9,7 +9,6 @@
     z-index: 10;
 
 }
-
 .container {
     width: 90vw; 
     max-width: 1200px; 
@@ -17,7 +16,6 @@
     height: 100%;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
@@ -30,19 +28,3 @@
     backdrop-filter: blur(2.5px);
 }
 
-.nav-menu {
-    display: none;
-
-    cursor: pointer;
-    color: #fff;
-}
-
-@media (max-width: 811px) {
-    .container > nav {
-        display: none; 
-    }
-
-    .nav-menu {
-        display: block; 
-    }
-}

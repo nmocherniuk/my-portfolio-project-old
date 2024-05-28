@@ -3,10 +3,11 @@ import { Link } from 'react-scroll';
 import classes from './NavItem.module.css';
 
 
-function NavItem({ children, idSection, setActiveSection, color, offset = 0 }) {
+function NavItem({ children, idSection, setActiveSection, color, closeMobileMenu, offset = 0 }) {
     return (
-        <li>
-            <Link to={idSection}
+       
+            <Link to={idSection} 
+                onClick={closeMobileMenu}
                 className={classes["nav-item"]}
                 spy={true}
                 activeClass={classes[`active-${idSection}`]}
@@ -14,7 +15,7 @@ function NavItem({ children, idSection, setActiveSection, color, offset = 0 }) {
                 smooth={true}
                 offset={offset}
                 duration={700}>{children}</Link>
-        </li>
+
     );
 };
 

@@ -8,18 +8,17 @@ import Footer from "./components/Footer/Footer.jsx";
 import Header from "./components/Header/Header.jsx";
 import HeroArea from "./components/Hero area/HeroArea.jsx";
 import CardInfo from "./components/Content/Portfolio/Project Overlay/CardInfo.jsx"
-import NavMenu from "./components/Header/NavMenu.jsx";
+
 
 
 
 function App() {
 
-  const overlayProject = useSelector(state => state.overlay.projectOverlay);
-  const overlayNavMenu = useSelector(state => state.overlay.navMenuOverlay);
+  const overlay = useSelector(state => state.overlay.overlay);
 
 
   useEffect(() => {
-    if (overlayProject || overlayNavMenu) {
+    if (overlay) {
       document.body.style.overflow = "hidden"; // Вимкнути скролінг
     } else {
       document.body.style.overflow = "auto"; // Увімкнути скролінг
@@ -27,13 +26,12 @@ function App() {
     return () => {
       document.body.style.overflow = "auto";
     };
-  }, [overlayProject, overlayNavMenu]);
+  }, [overlay]);
 
   return (
     <Fragment>
       <AnimatePresence>
-        {overlayNavMenu && <NavMenu/> }
-        {overlayProject && <CardInfo />}
+        {overlay && <CardInfo />}
       </AnimatePresence>
       <Header />
       <HeroArea />
